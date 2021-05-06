@@ -26,8 +26,7 @@ export function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setPage(1);
-    getMovies();
+    page === 1 ? getMovies() : setPage(1);
   };
 
   const getMovies = async () => {
@@ -39,12 +38,14 @@ export function Home() {
         const promise = await fetch(API_URL);
         const data = await promise.json();
         setMovies(data.results);
+        console.log(API_URL)
       }
       else if (!query) {
         const API_URL = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=${page}`
         const promise = await fetch(API_URL);
         const data = await promise.json();
         setMovies(data.results);
+        console.log(API_URL)
       }
     } catch (e) {
       console.error(e);
