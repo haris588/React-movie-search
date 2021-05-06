@@ -9,7 +9,7 @@ export function PaginationContainer({ handleNextPage, handlePrevPage, page, movi
                     prev
                 </Pagination.Button>
                 <Pagination.PageText>{page}</Pagination.PageText>
-                <Pagination.Button onClick={handleNextPage} disabled={movies.length < 20}>
+                <Pagination.Button onClick={handleNextPage} disabled={movies.length < 20 || movies.length === 0}>
                     next
                 </Pagination.Button>
             </Pagination.Wrapper>

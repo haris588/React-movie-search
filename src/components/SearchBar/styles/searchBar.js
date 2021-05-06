@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width:1200px;
+max-width:1400px;
   margin:0 auto;
-  background-image: url('images/banner.jpg');
+  background-image: url('images/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
   background-blend-mode: multiply;
-  background-color: rgba(0,0,0,0.65);  
+  background-color: rgba(0,0,0,0.35);  
 `;
 
 export const Wrapper = styled.div`
@@ -25,7 +25,7 @@ export const Title = styled.h1`
   color:rgba(255,255,255,0.9);
   max-width:500px;
   padding:2em 0;
-
+  
   @media (max-width:620px){
     display:none;
   }
@@ -50,8 +50,8 @@ export const Button = styled.button`
   align-items:center;
   position:absolute;
   right:-1px;
-  background-color: #61dadd;
-  color:#fff;
+  background-color: #ea1616;
+  color: rgba(255,255,255,0.9);
   cursor:pointer;
   border:0;
   border-radius:30px;
@@ -61,7 +61,7 @@ export const Button = styled.button`
   text-transform: uppercase;
 
   &:hover {
-    background-color: #38a2a5;
+    background-color: #7c2020;
   }
 
   @media (max-width:720px){

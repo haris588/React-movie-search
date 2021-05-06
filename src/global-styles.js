@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         scroll-behaviour: smooth;
-        background: #fff;
+        background: #000;
         font-size: 16px;
         line-height:1.5;
         

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width:1200px;
+  max-width:1400px;
   margin: 0 auto;
-  background: rgba(40,72,126,0.15);
+  background: #191919;
 `;
 
 export const Wrapper = styled.div`
@@ -22,7 +22,7 @@ export const Button = styled.button`
   padding:0.8em 1.7em;
   border:0;
   cursor:pointer;
-  background-color: rgba(40,72,126,1);
+  background-color: #ea1616;
   border-radius:15px;
   color: rgba(255,255,255,0.9);
   font-family: inherit;
@@ -30,10 +30,13 @@ export const Button = styled.button`
   text-transform: uppercase;
 
   &:hover {
+    background-color: #7c2020;
     transform: scale(1.1)
   }
   &:disabled {
-    background-color: rgba(40,72,126,0.3);
+    background-color:#7f7f7f;
+    transform: scale(1);
+    opacity:0.2;
   }
 
   @media (max-width:620px){
@@ -43,5 +46,5 @@ export const Button = styled.button`
 
 export const PageText = styled.p`
     padding:0 1em;
-    color:rgba(40,72,126,1);
+    color:rgba(255,255,255,0.9);
 `
