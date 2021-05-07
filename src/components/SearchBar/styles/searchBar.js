@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-max-width:1400px;
+  max-width:1400px;
   margin:0 auto;
   background-image: url('images/background.jpg');
   background-repeat: no-repeat;

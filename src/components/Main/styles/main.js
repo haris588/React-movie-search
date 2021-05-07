@@ -12,7 +12,8 @@ export const Row = styled.div`
     grid-gap: 2em;
     padding:2em 0;
     @media (max-width:1000px){
-        grid-template-columns: repeat(auto-fill, 1fr);
+        grid-template-columns: repeat(auto-fill, 100%);
+        padding:2em 1em;
     }
 `
 export const Title = styled.h2`
