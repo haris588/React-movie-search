@@ -88,18 +88,19 @@ export const Rating = styled.span`
     font-weight: 700;
     
      @media (max-width:620px){
+        position:relative;
         min-height:35px;
         min-width:35px;
         padding:0.3em;
         top:0.5em;
-        right:0.5em;
+        right:0;
+        margin: 0.8em;
     }
 
     @media (max-width:520px){
        position:relative;
        padding:0.3em;
-       top:0.5em;
-       right:0;
+      
     }
 `
 
